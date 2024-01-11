@@ -45,6 +45,12 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:^
         version: link:../../packages/config-eslint
+      '@repo/tailwind-config':
+        specifier: workspace:^
+        version: link:../../packages/tailwind-config
+      '@repo/typescript-config':
+        specifier: workspace:^
+        version: link:../../packages/config-typescript
       '@types/react':
         specifier: ^18.2.47
         version: 18.2.47
