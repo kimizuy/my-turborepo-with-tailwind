@@ -2,9 +2,15 @@ module.exports = {
   extends: [
     "plugin:astro/recommended",
     "plugin:astro/jsx-a11y-recommended",
-    // FIXME: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Array
-    // "@repo/eslint-config/react.js",
+    "@repo/eslint-config/react.js",
   ],
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".astro"],
+      },
+    },
+  },
   overrides: [
     {
       files: ["*.astro"],
